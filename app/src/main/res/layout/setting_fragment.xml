@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:background="@drawable/morelnk"
+    android:gravity="fill_vertical" >
+
+<ListView
+    android:id="@+id/settinglistview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp" >
+    
+</ListView>
+
+
+  <!--   <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/logout"
+        android:layout_alignParentLeft="true"
+        android:text="Exit"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/aboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/exit"
+        android:layout_alignParentLeft="true"
+        android:text="About App"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/findUs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/aboutApp"
+        android:layout_alignParentLeft="true"
+        android:text="Find Us"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/profileSetting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/findUs"
+        android:layout_alignParentLeft="true"
+        android:text="ProfileActivity Setting"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/profileSetting"
+        android:layout_alignParentLeft="true"
+        android:text="Change Password"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/previousOrder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/changePassword"
+        android:layout_alignParentLeft="true"
+        android:text="Prevous Order"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Logout"
+        android:textColor="@color/black" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/top_bar_n"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bBackInWine"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:background="@drawable/blogin"
+            android:text="Back"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/offers" >
+
+        <ListView
+            android:id="@+id/WineList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black"
+            android:layout_marginTop="40dp" >
+        </ListView>
+    </FrameLayout>
+
+
+</LinearLayout>

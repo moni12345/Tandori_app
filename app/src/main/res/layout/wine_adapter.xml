@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#3f3f3f"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvWineName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@android:string/httpErrorBadUrl"
+                android:text="hello"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvWineDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#3f3f3f"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:background="@color/black" />
+
+            <LinearLayout 
+                 android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvwinePrice"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+            	 android:gravity="center"
+                android:text="0.99"
+                android:textColor="@android:color/white"  />
+                <ImageView
+                    android:id="@+id/ivGoOnChoice"
+                   android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                android:background="@drawable/add_btn"
+                android:gravity="center_vertical" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" 
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/bWineAdd"
+                   android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/add_btn"
+                android:contentDescription="@string/hello_world"
+                android:visibility="visible"
+                android:gravity="center_vertical" />
+                <TextView
+                    android:id="@+id/tvcounterAdd"
+                      android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="0"
+                    android:visibility="invisible"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+           
+                    />
+
+                <ImageView
+                    android:id="@+id/bWineMinus"
+                   android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/minus_btn"
+                android:visibility="visible"
+                android:gravity="center_vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

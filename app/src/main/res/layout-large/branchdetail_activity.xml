@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/freddyYellow"
+    tools:context="activity.BranchDetailActivity" >
+
+    <ImageView
+        android:id="@+id/imgView_ToolBar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar_n"
+        android:contentDescription="ABC"
+        tools:ignore="HardCodedText" />
+
+    <ListView
+        android:id="@+id/listViewBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLogin"
+        android:layout_below="@+id/imgView_ToolBar_ID"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:listSelector="#d7d8da" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvShowPostalCode"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/imgView_ToolBar_ID"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        tools:ignore="HardCodedText" />
+
+    <Button
+        android:id="@+id/btnHome_BackID"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/imgView_ToolBar_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/loginicon"
+        android:text="@string/title_back"
+        android:textColor="@color/White"
+        tools:ignore="HardCodedText" />
+
+  <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.75"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Choose your nearest branch"
+        android:textColor="#9F0900"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

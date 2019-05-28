@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basket"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/basketListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1.2"
+        android:clickable="false"
+        android:divider="@android:color/black"
+        android:focusable="false"
+        android:focusableInTouchMode="false"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Special Comments" />
+
+        <EditText
+            android:id="@+id/etSpecialComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+
+            android:hint="Allergy Information"
+            android:padding="5dp"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sub Total"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvSubTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="£0.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/bCoupin"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="2.1"
+                android:background="@drawable/loginicon"
+                android:text="Coupon"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDeliveryChargetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delivery Charges"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvDeliveryCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="£0.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+            <Button
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="2.1"
+                android:background="@drawable/loginicon"
+                android:text="Coupon"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Discount"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvDiscountPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="£0.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+            <Button
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="2.1"
+                android:background="@drawable/loginicon"
+                android:text="Coupon"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/basket_text_color" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="£0.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/basket_text_color" />
+
+            <Button
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="2.1"
+                android:background="@drawable/loginicon"
+                android:text="Coupon"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/order_type_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="Delivery" />
+
+                <RadioButton
+                    android:id="@+id/rbCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Collection" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#4A1930">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="#4A1930" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="#4A1930" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#4A1930" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:background="#4A1930" >
+
+                    <TextView
+                        android:id="@+id/tvOfferName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Medium Text"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30sp" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivOfferImage2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+               android:src="@drawable/branch_icon"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvOfferDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:text="Medium Te dfklasdf klashdfklasdjfh jkasf ashdjklf sjkdfh klashdf asdfh jskdlf skdhfklashd fjklsd fklsh dkfhas jklfhsjkfl xt"
+                 android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20sp"
+                />
+            
+              <TextView
+                  android:id="@+id/tvSign"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="0.04"
+                  android:gravity="center"
+                  android:text="£"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:textColor="@color/white"
+                  android:textSize="24sp"
+                  android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOfferPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="00.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+               android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivAddItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.09"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/add_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

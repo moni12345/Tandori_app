@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+    android:background="@drawable/morelnk" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Terms and Conditions"
+            android:textColor="@color/Red"
+            android:textSize="26sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="20dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delivery_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/delivery"
+                    android:text="@string/delivery"
+                    android:textSize="18sp" />
+                <TextView 
+                    android:id="@+id/alcohal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alcohol :"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/delivery_desc"/>
+                
+                <TextView android:id="@+id/alcohal_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alcohal_desc"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/alcohal"/>
+
+                <TextView
+                    android:id="@+id/refund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alcohal_desc"
+                    android:layout_marginTop="10dp"
+                    android:text="Refund:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/refund_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/refund"
+                    android:text="@string/refund"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/refund_desc"
+                    android:layout_marginTop="10dp"
+                    android:text="Privacy:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/privacy_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/privacy"
+                    android:text="@string/privacy"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/privacy_desc"
+                    android:layout_marginTop="10dp"
+                    android:text="Allergy Advice:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/allergy_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/allergy"
+                    android:text="@string/allergy"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFAD4"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/lblListSubItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
+            android:text="testing"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubItemId"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/tvPoundSign"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="£"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtViewPriceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPlusIDSub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/add_btn"
+            android:contentDescription="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/txtViewPizzaCountIDSub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMinusIDSub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/minus_btn"
+            android:contentDescription="@string/hello_world" />
+
+        <ImageView
+            android:id="@+id/ivgpChoice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/showchoice"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewsubDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="5dp"
+        android:text="fsdfsasdfsdfsdfs"
+        android:textColor="@color/cell_color"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

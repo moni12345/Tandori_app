@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skytech.aminatandoori"
+    android:versionCode="2"
+    android:versionName="2.0">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.skytech.aminatandoori.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.skytech.aminatandoori.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/luncher_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
+        <activity
+            android:name="activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activity.BranchDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.ItemFromActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.DealOfferItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.PreviousOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.BasketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.OffersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.FindusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="activity.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.DeliveryInformationActivity"
+            android:label="@string/title_activity_delivery_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.DeliveryConformationActivity"
+            android:label="@string/title_activity_delivery__conformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.FavoriteActivity"
+            android:label="@string/title_activity_activity_favorite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.TermsAndConditionActivity"
+            android:label="@string/terms_and_condition"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="activity.MainMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.WineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.WineChoiceActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="gcm.services.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="gcm.services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.skytech.aminatandoori" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

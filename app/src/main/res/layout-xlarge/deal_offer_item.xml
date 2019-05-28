@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/top_bar_n"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bBackFromWineChoice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/loginicon"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bLoginFromWineChoice"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/loginicon"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/offers"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="TextView"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp" >
+
+            <LinearLayout
+                android:id="@+id/linearTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvChoices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.05" >
+
+            <Button
+                android:id="@+id/bAdditem"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/loginicon"
+                android:text="Add"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/bDiscard"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/loginicon"
+                    android:text="Discard"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bNext"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/loginicon"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5" >
+
+            <ListView
+                android:id="@+id/lvItemChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

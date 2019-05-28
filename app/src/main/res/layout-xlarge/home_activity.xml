@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgView_ToolBar_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar_n"
+        android:contentDescription="ABC"
+        tools:ignore="HardCodedText" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgView_ToolBar_ID"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/down_bar_no_circle"
+        android:contentDescription="ABC"
+        tools:ignore="HardCodedText" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgBtnHomeID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="ABC"
+            tools:ignore="HardCodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnFavouriteID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/imgView"
+            android:layout_toRightOf="@+id/imgBtnHomeID"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="ABC"
+            tools:ignore="HardCodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnOfferID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="ABC"
+            tools:ignore="HardCodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnBasketID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="ABC"
+            tools:ignore="HardCodedText" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSettingsID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="ABC"
+            tools:ignore="HardCodedText" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnHome_BackID"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shapte"
+        android:text="@string/title_back"
+        android:textSize="24sp"
+        android:textColor="@color/White"
+        tools:ignore="HardCodedText" />
+
+    <Button
+        android:id="@+id/btnHome_DoneID"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/loginicon"
+        android:text="@string/title_login"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/White"
+        tools:ignore="HardCodedText"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/btnHome_BackID"
+        android:layout_alignRight="@+id/container"
+        android:layout_alignEnd="@+id/container" />
+
+    <TextView
+        android:id="@+id/basketCount"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="186dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:textColor="@color/Black"
+        android:textSize="10sp" />
+
+</RelativeLayout>

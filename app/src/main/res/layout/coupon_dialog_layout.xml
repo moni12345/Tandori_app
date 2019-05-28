@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cell_color"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/couponText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
+        android:hint="Enter Coupon No. Here"
+        android:layout_marginTop="20dp"
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/btnEnterCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/couponText"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:text="Enter"
+        android:width="100dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
